@@ -1,0 +1,12 @@
+.intro__textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: left;
+}
+@media screen and (max-width: 767px){
+    .intro__textarea {
+        gap: 10px;
+    }
+}

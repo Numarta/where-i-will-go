@@ -1,0 +1,23 @@
+.intro {
+    display: grid;
+    grid-template-columns: minmax(min-content,1fr) minmax(min-content,1fr);
+    max-width: 1280px;
+    gap: 90px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px){
+    .intro {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .intro {
+        gap: 20px;
+    }
+}
+

@@ -1,0 +1,61 @@
+.footer__reality {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 0.5;
+    font-weight: 700;
+    z-index: 1;
+    display: none;
+}
+
+.footer:hover .footer__reality {
+    display: inline;
+    animation: 1s linear 1s both;
+    -ms-animation: 1s linear 1s both;
+    -o-animation: 1s linear 1s both;
+    -webkit-animation: 1s linear 1s both;
+    -moz-animation: 1s linear 1s both;
+    animation-name: popup-text;
+    scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+}
+
+.footer:touch-action .footer__reality {
+    display: inline;
+    animation: 1s linear 1s both;
+    -ms-animation: 1s linear 1s both;
+    -o-animation: 1s linear 1s both;
+    -webkit-animation: 1s linear 1s both;
+    -moz-animation: 1s linear 1s both;
+    animation-name: popup-text;
+    scale: 1;
+    -ms-scale: 1;
+    -o-scale: 1;
+    -webkit-scale: 1;
+    -moz-scale: 1;
+}
+
+@keyframes popup-text {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        rotate: 0;
+        -ms-scale: 0;
+        -o-scale: 0;
+        -webkit-scale: 0;
+        -moz-scale: 0;
+    }
+
+    to {
+        scale: 0;
+        -ms-scale: 0;
+        -o-scale: 0;
+        -moz-scale: 1;
+        -webkit-scale: 0;
+        rotate: 360deg;
+    }
+}
